@@ -7,7 +7,7 @@ export const fetchCountries = createAsyncThunk(
   async () => {
     const response = await fetch(apiUrl);
     const data = await response.json();
-    return data;
+    return data.slice(0, 10);
   },
 );
 
