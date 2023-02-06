@@ -1,29 +1,42 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCountries } from '../../redux/countries/CountriesSlice';
+import './CountriesList.css';
 
 function CountriesList() {
+  const { countries, loading, error } = useSelector((state) => state.countries);
   const dispatch = useDispatch();
-  const { loading, error, countries } = useSelector((state) => state.countries);
 
   React.useEffect(() => {
     dispatch(fetchCountries());
   }, [dispatch]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
+  if (loading) return <p>Loading...</p>;
   if (error) {
-    return <div>{error}</div>;
+    return (
+      <p>
+        Error:
+        {error.message}
+      </p>
+    );
   }
 
   return (
-    <ul>
-      {countries.map((country) => (
-        <li key={country.alpha2Code}>{country.name}</li>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {countries.slice(0, 10).map((country) => (
+        <div style={{ width: '50%', padding: '10px' }} key={country.alpha3Code}>
+          <Link to={`/countries/${country.alpha3Code}`}>
+            <img
+              src={country.flag}
+              alt={country.name}
+              style={{ width: '20%', height: 'auto', marginRight: '10px' }}
+            />
+            {country.name}
+          </Link>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 
