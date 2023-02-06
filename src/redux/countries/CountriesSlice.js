@@ -1,18 +1,18 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const apiUrl = "https://restcountries.com/v2/all";
+const apiUrl = 'https://restcountries.com/v2/all';
 
 export const fetchCountries = createAsyncThunk(
-  "countries/fetchCountries",
+  'countries/fetchCountries',
   async () => {
     const response = await fetch(apiUrl);
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 const countriesSlice = createSlice({
-  name: "countries",
+  name: 'countries',
   initialState: {
     loading: false,
     error: null,
@@ -20,17 +20,17 @@ const countriesSlice = createSlice({
   },
   reducers: {},
   extraReducers: {
-    [fetchCountries.pending]: (state) => {
-      state.loading = true;
-    },
-    [fetchCountries.fulfilled]: (state, action) => {
-      state.loading = false;
-      state.countries = action.payload;
-    },
-    [fetchCountries.rejected]: (state, action) => {
-      state.loading = false;
-      state.error = action.error;
-    },
+    [fetchCountries.pending]: (state) => ({ ...state, loading: true }),
+    [fetchCountries.fulfilled]: (state, action) => ({
+      ...state,
+      loading: false,
+      countries: action.payload,
+    }),
+    [fetchCountries.rejected]: (state, action) => ({
+      ...state,
+      loading: false,
+      error: action.error,
+    }),
   },
 });
 
