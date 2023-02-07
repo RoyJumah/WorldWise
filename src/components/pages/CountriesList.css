@@ -6,6 +6,7 @@
 .countries-list-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .country-item {
@@ -74,4 +75,31 @@
 
 .country-info {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .country-item {
+    width: 25%;
+  }
+
+  .search-input {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flag-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .country-item {
+    width: 45%;
+    height: 300px;
+    margin: 10px;
+  }
+
+  .search-input {
+    width: 80%;
+  }
 }
