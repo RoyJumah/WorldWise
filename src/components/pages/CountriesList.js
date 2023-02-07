@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCountries } from '../../redux/countries/CountriesSlice';
 import './CountriesList.css';
+import LoadingSpinner from '../LoadingSpinner';
 
 function CountriesList() {
   const { countries, loading, error } = useSelector((state) => state.countries);
@@ -12,7 +13,7 @@ function CountriesList() {
     dispatch(fetchCountries());
   }, [dispatch]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpinner />;
   if (error) {
     return (
       <p>

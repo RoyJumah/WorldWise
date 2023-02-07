@@ -1,0 +1,12 @@
+/* .selected-country-flag {
+  animation: swaying 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes swaying {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+} */
