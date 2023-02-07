@@ -10,7 +10,7 @@
 
 .country-item {
   width: 15%;
-  background: white;
+  background: #f070a1;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   display: flex;
