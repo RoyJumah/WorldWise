@@ -22,7 +22,7 @@ const Countries = () => {
       <CSSTransition
         key={selectedCountry.alpha3Code}
         timeout={300}
-        classNames="fade"
+        classNames="fade-enter fade-enter-active fade-exit fade-exit-active"
       >
         <div className="selected-country-info">
           <img

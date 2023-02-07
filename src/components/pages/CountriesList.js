@@ -18,12 +18,9 @@ function CountriesList() {
 
   React.useEffect(() => {
     setFilteredCountries(
-      countries.filter(
-        (country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())
-          || country.alpha3Code.toLowerCase().includes(searchTerm.toLowerCase()),
-      ),
+      countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())),
     );
-  }, [searchTerm, countries]);
+  }, [countries, searchTerm]);
 
   if (loading) return <LoadingSpinner />;
   if (error) {
@@ -55,8 +52,11 @@ function CountriesList() {
                 alt={country.name}
                 className="country-flag"
               />
-              {country.name}
             </Link>
+            <div className="country-info">
+              <h3 className="country-name">{country.name}</h3>
+              <p className="country-region">{country.region}</p>
+            </div>
           </div>
         ))}
       </div>
