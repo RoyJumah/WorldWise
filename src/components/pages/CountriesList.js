@@ -22,15 +22,19 @@ function CountriesList() {
     );
   }
 
+  const randomCountries = [...countries]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 12);
+
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {countries.slice(0, 10).map((country) => (
-        <div style={{ width: '50%', padding: '10px' }} key={country.alpha3Code}>
+    <div className="countries-list-container">
+      {randomCountries.map((country) => (
+        <div className="country-item" key={country.alpha3Code}>
           <Link to={`/countries/${country.alpha3Code}`}>
             <img
               src={country.flag}
               alt={country.name}
-              style={{ width: '20%', height: 'auto', marginRight: '10px' }}
+              className="country-flag"
             />
             {country.name}
           </Link>
