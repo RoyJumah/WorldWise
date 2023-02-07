@@ -11,7 +11,7 @@
 .country-item {
   width: 15%;
   background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -19,12 +19,12 @@
   margin: 20px;
   height: 400px;
   overflow: hidden;
-
   transition: all 0.3s;
 }
+
 .country-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
 
@@ -70,4 +70,8 @@
   font-size: 18px;
   border: 1px solid lightgray;
   border-radius: 10px;
+}
+
+.country-info {
+  text-align: center;
 }

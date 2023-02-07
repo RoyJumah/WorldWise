@@ -36,6 +36,10 @@ const Countries = () => {
             {selectedCountry.capital}
           </p>
           <p>
+            <strong>Timezones:</strong>
+            {selectedCountry.timezones}
+          </p>
+          <p>
             <strong>Population:</strong>
             {selectedCountry.population.toLocaleString()}
           </p>

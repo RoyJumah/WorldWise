@@ -13,9 +13,9 @@ const MainHeader = () => (
             Countries
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/countrieslist">Countries List</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   </div>

@@ -52,11 +52,11 @@ function CountriesList() {
                 alt={country.name}
                 className="country-flag"
               />
+              <div className="country-info">
+                <h3 className="country-name">{country.name}</h3>
+                <p className="country-timezone">{country.timezones}</p>
+              </div>
             </Link>
-            <div className="country-info">
-              <h3 className="country-name">{country.name}</h3>
-              <p className="country-region">{country.region}</p>
-            </div>
           </div>
         ))}
       </div>
