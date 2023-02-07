@@ -9,12 +9,69 @@
 }
 
 .country-item {
-  width: 25%;
-  padding: 10px;
+  width: 15%;
+  background: #f070a1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 400px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.country-item:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 
 .country-flag {
-  width: 20%;
+  width: 100%;
   height: auto;
   margin-right: 10px;
+}
+
+.countries-list-container .fade-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.countries-list-container .fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 500ms ease-in-out;
+}
+
+.countries-list-container .fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.countries-list-container .fade-exit-active {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 500ms ease-in-out;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.search-input {
+  width: 25%;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.country-info {
+  text-align: center;
 }
