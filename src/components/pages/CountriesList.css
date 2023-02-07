@@ -2,6 +2,7 @@
   width: 60px;
   height: 60px;
 }
+
 .countries-list-container {
   display: flex;
   flex-wrap: wrap;
