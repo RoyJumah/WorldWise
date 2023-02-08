@@ -15,6 +15,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [Walkthrough Video ](#walkthrough-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -63,6 +64,14 @@
 > Add a link to your deployed project.
 
 - [Live Demo Link](https://royjumahworldwise.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- WALKTTHROUGH VIDEO -->
+
+## Walkthrough video <a name ="walkthrough-video"></a>
+
+[Walkthrough video](https://www.loom.com/share/b2a0d7798ed94c8a8d92c444e667ac46)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
