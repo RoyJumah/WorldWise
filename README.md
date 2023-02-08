@@ -85,7 +85,7 @@ Clone this repository to your desired folder:
 
 ```sh
  $ cd my-folder
- $ git clone https://github.com/yuvenalmash/space-travelers-hub.git
+ $ git clone https://github.com/RoyJumah/WorldWise.git
 ```
 
 ### Usage
@@ -142,7 +142,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yuvenalmash/space-travelers-hub/issues).
+Feel free to check the [issues page](https://github.com/RoyJumah/WorldWise.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
