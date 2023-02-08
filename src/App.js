@@ -16,11 +16,9 @@ class App extends React.Component {
         <MainHeader />
         <main>
           <Route exact path="/">
-            <Countries />
-          </Route>
-          <Route exact path="/countrieslist">
             <CountriesList />
           </Route>
+          <Route path="/countries/:alpha3Code" component={Countries} />
         </main>
       </div>
     );
