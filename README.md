@@ -60,9 +60,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project. **Not yet Available**
+> Add a link to your deployed project.
 
-- [Live Demo Link](https://space-travelers-hub-2023.netlify.app/)
+- [Live Demo Link](https://royjumahworldwise.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
