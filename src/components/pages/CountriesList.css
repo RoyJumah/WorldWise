@@ -93,13 +93,22 @@
     height: 40px;
   }
 
+  .countries-list-container {
+    padding: 10px;
+  }
+
   .country-item {
-    width: 45%;
+    width: 48%;
     height: 300px;
-    margin: 10px;
+    margin: 2% 1%;
   }
 
   .search-input {
     width: 80%;
   }
+}
+
+.arrow-icon {
+  color: #fff;
+  margin-top: 32px;
 }

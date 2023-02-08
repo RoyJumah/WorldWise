@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { RiArrowLeftLine } from 'react-icons/ri';
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './Countries.css';
@@ -73,6 +74,10 @@ const Countries = () => {
               )}
             </p>
           ) : null}
+          <Link to="/" className="return-to-list-link">
+            <RiArrowLeftLine size={25} />
+            Return to Homepage
+          </Link>
         </div>
       </CSSTransition>
     </TransitionGroup>

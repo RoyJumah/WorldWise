@@ -4,6 +4,8 @@
   align-items: center;
   margin: 0 auto;
   gap: 8px;
+  background-color: #d4447c;
+  padding: 32px;
 }
 
 .fade-enter {
@@ -32,4 +34,12 @@
 
 .selected-country-container {
   display: flex;
+}
+
+.return-to-list-link {
+  margin-top: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

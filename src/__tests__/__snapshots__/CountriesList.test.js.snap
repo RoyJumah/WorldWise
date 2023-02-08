@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display CountriesList component it matches snapshot 1`] = `
+Array [
+  <div
+    className="search-container"
+  >
+    <input
+      className="search-input"
+      onChange={[Function]}
+      placeholder="Search for a country..."
+      type="text"
+      value=""
+    />
+  </div>,
+  <div
+    className="countries-list-container"
+  />,
+]
+`;
