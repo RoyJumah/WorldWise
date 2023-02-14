@@ -20,6 +20,7 @@
   padding: 10px;
   width: 300px;
   position: relative;
+  overflow: hidden;
 }
 
 .country-flag {
@@ -37,23 +38,23 @@
   color: #fff;
 }
 
-.countries-list-container .fade-enter {
+.selected-country-container .fade-enter {
   opacity: 0;
   transform: translateY(30px);
 }
 
-.countries-list-container .fade-enter-active {
+.selected-country-container .fade-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: all 500ms ease-in-out;
 }
 
-.countries-list-container .fade-exit {
+.selected-country-container .fade-exit {
   opacity: 1;
   transform: translateY(0);
 }
 
-.countries-list-container .fade-exit-active {
+.selected-country-container .fade-exit-active {
   opacity: 0;
   transform: translateY(-30px);
   transition: all 500ms ease-in-out;
