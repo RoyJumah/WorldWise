@@ -10,48 +10,51 @@
 }
 
 .country-item {
-  width: 15%;
-  background: #f070a1;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 20px;
-  height: 400px;
+  background: #d7376f;
+  box-shadow: 0 0 11px 8px #6c262c;
+  display: flex;
+  height: 215px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  position: relative;
   overflow: hidden;
-  transition: all 0.3s;
-}
-
-.country-item:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-  cursor: pointer;
 }
 
 .country-flag {
-  width: 100%;
+  width: 150px;
   height: auto;
-  margin-right: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.countries-list-container .fade-enter {
+.arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.selected-country-container .fade-enter {
   opacity: 0;
   transform: translateY(30px);
 }
 
-.countries-list-container .fade-enter-active {
+.selected-country-container .fade-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: all 500ms ease-in-out;
 }
 
-.countries-list-container .fade-exit {
+.selected-country-container .fade-exit {
   opacity: 1;
   transform: translateY(0);
 }
 
-.countries-list-container .fade-exit-active {
+.selected-country-container .fade-exit-active {
   opacity: 0;
   transform: translateY(-30px);
   transition: all 500ms ease-in-out;
@@ -65,12 +68,10 @@
 }
 
 .search-input {
-  width: 25%;
-  height: 40px;
   padding: 0 10px;
-  font-size: 18px;
+  outline: none;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .country-info {
@@ -106,9 +107,4 @@
   .search-input {
     width: 80%;
   }
-}
-
-.arrow-icon {
-  color: #fff;
-  margin-top: 32px;
 }

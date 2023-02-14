@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';
-
 import { fetchCountries } from '../../redux/countries/CountriesSlice';
 import './CountriesList.css';
 import LoadingSpinner from '../LoadingSpinner';
@@ -53,6 +53,7 @@ function CountriesList() {
                 alt={country.name}
                 className="country-flag"
               />
+              <BsArrowRightCircle className="arrow-icon" />
               <div className="country-info">
                 <h3 className="country-name">{country.name}</h3>
                 <p className="country-timezone">{country.timezones}</p>
