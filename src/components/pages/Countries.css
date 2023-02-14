@@ -27,9 +27,11 @@ ul {
   justify-content: center;
   width: 100%;
 }
+
 .selected-country-details-content li:nth-child(odd) {
   background-color: #bd2459;
 }
+
 .fade-enter {
   opacity: 0;
 }
@@ -54,12 +56,4 @@ ul {
   background: #d7376f;
   box-shadow: 0 0 11px 8px #6c262c;
   margin-bottom: 6px;
-}
-
-.return-to-list-link {
-  margin-top: 32px;
-  color: white !important;
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }

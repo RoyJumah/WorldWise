@@ -60,6 +60,7 @@ a.active {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  color: #fff;
 }
 
 .header {
@@ -67,8 +68,4 @@ a.active {
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-.icons {
-  color: #fff;
 }
