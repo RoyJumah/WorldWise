@@ -10,29 +10,31 @@
 }
 
 .country-item {
-  width: 15%;
-  background: #f070a1;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 20px;
-  height: 400px;
-  overflow: hidden;
-  transition: all 0.3s;
-}
-
-.country-item:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-  cursor: pointer;
+  background: #d7376f;
+  box-shadow: 0 0 11px 8px #6c262c;
+  display: flex;
+  height: 215px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  position: relative;
 }
 
 .country-flag {
-  width: 100%;
+  width: 150px;
   height: auto;
-  margin-right: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
 }
 
 .countries-list-container .fade-enter {
@@ -65,12 +67,10 @@
 }
 
 .search-input {
-  width: 25%;
-  height: 40px;
   padding: 0 10px;
-  font-size: 18px;
+  outline: none;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .country-info {

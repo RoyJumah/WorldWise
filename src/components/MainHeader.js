@@ -6,7 +6,7 @@ import { FaMicrophone, FaCog } from 'react-icons/fa';
 const MainHeader = () => (
   <div className="display__flex">
     <NavLink to="/">
-      <MdChevronLeft size={60} />
+      <MdChevronLeft size={45} />
       {' '}
     </NavLink>
 
@@ -26,8 +26,8 @@ const MainHeader = () => (
       </ul>
     </nav>
     <div className="icons">
-      <FaMicrophone size={30} />
-      <FaCog size={30} />
+      <FaMicrophone size={20} />
+      <FaCog size={20} />
     </div>
   </div>
 );

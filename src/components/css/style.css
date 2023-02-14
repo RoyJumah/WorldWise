@@ -16,25 +16,19 @@ ul {
   justify-content: center;
 }
 
-li {
-  margin: 0 1rem;
-  width: 5rem;
-}
-
 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a.active {
-  /* color: #95bcf0; */
   padding-bottom: 0.25rem;
 }
 
 .page__header {
-  color: #000;
+  color: #fff;
   padding: 1.2rem;
   font-size: 20px;
 }
@@ -51,7 +45,7 @@ a.active {
   justify-content: space-between;
   width: 100%;
   height: 5rem;
-  background-color: rgb(236, 76, 138);
+  background-color: #a1234f;
   padding: 0 10%;
 }
 
@@ -73,4 +67,8 @@ a.active {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.icons {
+  color: #fff;
 }
